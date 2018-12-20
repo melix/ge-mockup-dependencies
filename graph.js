@@ -298,6 +298,7 @@ function drawGraph() {
         }
 
         setup();
+        hideDetailsPanel();
 
         function restart() {
             $("#dependency_graph_svg").html("");
@@ -487,8 +488,17 @@ function drawGraph() {
             $("#dr_selection_reasons").html(reasons);
         }
 
+        function showDetailsPanel() {
+            $("#dependency_graph_details").animate({width:'show'},350);
+        }
+
+        function hideDetailsPanel() {
+            $("#dependency_graph_details").animate({width:'hide'},350);
+        }
+
         function focus(d) {
             d3.event.stopPropagation();
+            showDetailsPanel();
             var predecessors = transitivePredecessors(d);
             var setop = function(o) {
                 var focus = predecessors.nodes.has(o.index);
@@ -517,6 +527,7 @@ function drawGraph() {
         }
 
         function unfocus() {
+           hideDetailsPanel();
            var one = function(e) { e.focus = false; return 1; }
            outerStroke.style("opacity", one);
            node.style("opacity", one);
