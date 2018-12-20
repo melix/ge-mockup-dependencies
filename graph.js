@@ -501,7 +501,9 @@ function drawGraph() {
         }
 
         function focus(d) {
-            d3.event.stopPropagation();
+            if (d3.event != null) {
+                d3.event.stopPropagation();
+            }
             showDetailsPanel();
             var predecessors = transitivePredecessors(d);
             var setop = function(o) {
