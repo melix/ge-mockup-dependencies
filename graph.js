@@ -3,7 +3,11 @@ var width = 800;
 var height = 600;
 var color = d3.scaleOrdinal(d3.schemeCategory10);
 
-function componentCategory(attributes) {
+function componentCategory(node) {
+    if (node.type == "unresolved") {
+        return "Unresolved dependency";
+    }
+    var attributes = node.resolvedVariantAttributes;
     var category = attributes["org.gradle.component.category"];
     if (category == "library") {
         return "Library";
@@ -67,7 +71,7 @@ function drawGraph() {
             var showConstraints = $("#show_constraints").is(':checked');
 
             graph.nodes.forEach(function (n, i) {
-                n.componentCategory = componentCategory(n.resolvedVariantAttributes);
+                n.componentCategory = componentCategory(n);
                 nodeToId[n.id] = i;
                 n.visible = true;
                 if (projectsOnly && (n.type != 'project')) {
