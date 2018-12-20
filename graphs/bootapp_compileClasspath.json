@@ -1,0 +1,239 @@
+{
+  "project": "bootapp",
+  "configuration": "compileClasspath",
+  "description": "Compile classpath for source set \u0027main\u0027.",
+  "root": "fa603cd9-9c7b-42ac-ac83-b54cea954332",
+  "nodes": [
+    {
+      "id": "fa603cd9-9c7b-42ac-ac83-b54cea954332",
+      "name": "project :bootapp",
+      "type": "project",
+      "resolvedVariantDisplayName": "compileClasspath",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api"
+      },
+      "selectionReasons": [
+        {
+          "cause": "ROOT",
+          "reason": "root"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "1596af1a-3d55-4c69-b66e-feb920e7a6b7",
+      "name": "org.springframework.boot:spring-boot-dependencies:1.5.8.RELEASE",
+      "type": "module",
+      "resolvedVariantDisplayName": "enforced-platform-compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "enforced-platform"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "FORCED",
+          "reason": "forced"
+        }
+      ],
+      "constraint": false,
+      "forced": true,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "f8e43b14-6d3d-4db5-8b74-5df26012a3d9",
+      "name": "com.google.code.gson:gson:2.8.2",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        },
+        {
+          "cause": "FORCED",
+          "reason": "forced"
+        }
+      ],
+      "constraint": true,
+      "forced": true,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "4b193306-48bc-429e-8fee-3a2df86bc10d",
+      "name": "dom4j:dom4j:1.6.1",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        },
+        {
+          "cause": "FORCED",
+          "reason": "forced"
+        }
+      ],
+      "constraint": true,
+      "forced": true,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "3e7ad228-48bc-4d9d-b25f-ca8c1dcd0340",
+      "name": "xml-apis:xml-apis:1.4.01",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        },
+        {
+          "cause": "FORCED",
+          "reason": "forced"
+        }
+      ],
+      "constraint": true,
+      "forced": true,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "cbde4490-7b3f-45c7-abfa-5cefea7fac5e",
+      "name": "org.codehaus.groovy:groovy:2.4.12",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        },
+        {
+          "cause": "FORCED",
+          "reason": "forced"
+        }
+      ],
+      "constraint": true,
+      "forced": true,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    }
+  ],
+  "links": [
+    {
+      "source": "1596af1a-3d55-4c69-b66e-feb920e7a6b7",
+      "target": "f8e43b14-6d3d-4db5-8b74-5df26012a3d9",
+      "requested": "com.google.code.gson:gson:2.8.2",
+      "constraint": true,
+      "depth": 1
+    },
+    {
+      "source": "4b193306-48bc-429e-8fee-3a2df86bc10d",
+      "target": "3e7ad228-48bc-4d9d-b25f-ca8c1dcd0340",
+      "requested": "xml-apis:xml-apis:1.0.b2",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "1596af1a-3d55-4c69-b66e-feb920e7a6b7",
+      "target": "4b193306-48bc-429e-8fee-3a2df86bc10d",
+      "requested": "dom4j:dom4j:1.6.1",
+      "constraint": true,
+      "depth": 1
+    },
+    {
+      "source": "1596af1a-3d55-4c69-b66e-feb920e7a6b7",
+      "target": "cbde4490-7b3f-45c7-abfa-5cefea7fac5e",
+      "requested": "org.codehaus.groovy:groovy:2.4.12",
+      "constraint": true,
+      "depth": 1
+    },
+    {
+      "source": "1596af1a-3d55-4c69-b66e-feb920e7a6b7",
+      "target": "3e7ad228-48bc-4d9d-b25f-ca8c1dcd0340",
+      "requested": "xml-apis:xml-apis:1.4.01",
+      "constraint": true,
+      "depth": 1
+    },
+    {
+      "source": "fa603cd9-9c7b-42ac-ac83-b54cea954332",
+      "target": "1596af1a-3d55-4c69-b66e-feb920e7a6b7",
+      "requested": "org.springframework.boot:spring-boot-dependencies:1.5.8.RELEASE",
+      "constraint": false,
+      "depth": 0
+    },
+    {
+      "source": "fa603cd9-9c7b-42ac-ac83-b54cea954332",
+      "target": "f8e43b14-6d3d-4db5-8b74-5df26012a3d9",
+      "requested": "com.google.code.gson:gson",
+      "constraint": false,
+      "depth": 0
+    },
+    {
+      "source": "fa603cd9-9c7b-42ac-ac83-b54cea954332",
+      "target": "4b193306-48bc-429e-8fee-3a2df86bc10d",
+      "requested": "dom4j:dom4j",
+      "constraint": false,
+      "depth": 0
+    },
+    {
+      "source": "fa603cd9-9c7b-42ac-ac83-b54cea954332",
+      "target": "cbde4490-7b3f-45c7-abfa-5cefea7fac5e",
+      "requested": "org.codehaus.groovy:groovy:1.8.6",
+      "constraint": false,
+      "depth": 0
+    }
+  ]
+}

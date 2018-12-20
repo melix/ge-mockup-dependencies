@@ -3,26 +3,25 @@ var width = 800;
 var height = 600;
 var color = d3.scaleOrdinal(d3.schemeCategory10);
 
-var componentCategory = function(attributes) {
-    var category = attributes["org.gradle.component.category"]
+function componentCategory(attributes) {
+    var category = attributes["org.gradle.component.category"];
     if (category == "library") {
         return "Library";
     }
-    if (category == "platform") {
+    if ((category == "platform") || (category == "enforced-platform")) {
         return "Platform";
     }
     return "Unknown";
 }
 
-var typeColor = function(type) {
-    var idx = 3;
+function typeColor(type) {
     if (type == "project") {
-        idx = 1;
+        return "#DEFFDB";
     }
     if (type == "unresolved") {
-        idx = 2;
+        return "#FF0000";
     }
-    return color(idx);
+    return "#DDCCDD";
 }
 
 function drawGraph() {
@@ -68,6 +67,7 @@ function drawGraph() {
             var showConstraints = $("#show_constraints").is(':checked');
 
             graph.nodes.forEach(function (n, i) {
+                n.componentCategory = componentCategory(n.resolvedVariantAttributes);
                 nodeToId[n.id] = i;
                 n.visible = true;
                 if (projectsOnly && (n.type != 'project')) {
@@ -373,6 +373,9 @@ function drawGraph() {
                 if (d.id == graph.root) {
                     return color(0);
                 }
+                if (d.componentCategory == "Platform") {
+                    return "#EEED9D";
+                }
                 return typeColor(d.type);
             });
 
@@ -466,7 +469,7 @@ function drawGraph() {
             $("#dr_requested").html(Array.from(requested).join("<br>"));
             $("#dr_variant").html(d.resolvedVariantDisplayName);
             var attrs = d.resolvedVariantAttributes;
-            $("#dr_component_category").html(componentCategory(attrs));
+            $("#dr_component_category").html(d.componentCategory);
 
             var attributesText = "";
             Object.keys(attrs).forEach(function(key) {
