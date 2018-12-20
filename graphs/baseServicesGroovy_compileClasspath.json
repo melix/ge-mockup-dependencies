@@ -1,0 +1,247 @@
+{
+  "project": "baseServicesGroovy",
+  "configuration": "compileClasspath",
+  "description": "Compile classpath for source set \u0027main\u0027.",
+  "root": "296ff3bd-091a-4102-b26e-bd8beeafcd50",
+  "nodes": [
+    {
+      "id": "296ff3bd-091a-4102-b26e-bd8beeafcd50",
+      "name": "project :baseServicesGroovy",
+      "type": "project",
+      "resolvedVariantDisplayName": "compileClasspath",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "ROOT",
+          "reason": "root"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "5ff7a023-52a2-4341-a00a-98e38d5d2bda",
+      "name": "org.gradle.groovy:groovy-all:1.0-2.5.4",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "emulating the Groovy 2.4-style groovy-all.jar, see https://github.com/gradle/gradle-groovy-all"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "80b1208c-8ef6-47e6-9f9c-1d7084c5a21d",
+      "name": "project :baseServices",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "fb7973d7-81a5-4385-b964-fc7958767cbc",
+      "name": "project :distributionsDependencies",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "platform"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "be1e6d87-88dc-470f-ba08-2a4a61971bdf",
+      "name": "it.unimi.dsi:fastutil:8.2.1",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "e2d80322-3d7d-4543-ae19-ab6456069958",
+      "name": "com.google.guava:guava:26.0-android",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "android variant is compatible with JDK 7"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "5bc80a25-6cb8-40f2-98e4-a913db1fea86",
+      "name": "com.google.code.findbugs:jsr305:3.0.2",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    }
+  ],
+  "links": [
+    {
+      "source": "296ff3bd-091a-4102-b26e-bd8beeafcd50",
+      "target": "5ff7a023-52a2-4341-a00a-98e38d5d2bda",
+      "requested": "org.gradle.groovy:groovy-all",
+      "constraint": false,
+      "depth": 0
+    },
+    {
+      "source": "fb7973d7-81a5-4385-b964-fc7958767cbc",
+      "target": "be1e6d87-88dc-470f-ba08-2a4a61971bdf",
+      "requested": "it.unimi.dsi:fastutil:{strictly 8.2.1}",
+      "constraint": true,
+      "depth": 2
+    },
+    {
+      "source": "fb7973d7-81a5-4385-b964-fc7958767cbc",
+      "target": "5ff7a023-52a2-4341-a00a-98e38d5d2bda",
+      "requested": "org.gradle.groovy:groovy-all:{strictly 1.0-2.5.4}",
+      "constraint": true,
+      "depth": 2
+    },
+    {
+      "source": "fb7973d7-81a5-4385-b964-fc7958767cbc",
+      "target": "e2d80322-3d7d-4543-ae19-ab6456069958",
+      "requested": "com.google.guava:guava:{strictly 26.0-android}",
+      "constraint": true,
+      "depth": 2
+    },
+    {
+      "source": "fb7973d7-81a5-4385-b964-fc7958767cbc",
+      "target": "5bc80a25-6cb8-40f2-98e4-a913db1fea86",
+      "requested": "com.google.code.findbugs:jsr305:{strictly 3.0.2}",
+      "constraint": true,
+      "depth": 2
+    },
+    {
+      "source": "80b1208c-8ef6-47e6-9f9c-1d7084c5a21d",
+      "target": "fb7973d7-81a5-4385-b964-fc7958767cbc",
+      "requested": "project :distributionsDependencies",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "80b1208c-8ef6-47e6-9f9c-1d7084c5a21d",
+      "target": "e2d80322-3d7d-4543-ae19-ab6456069958",
+      "requested": "com.google.guava:guava",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "80b1208c-8ef6-47e6-9f9c-1d7084c5a21d",
+      "target": "5bc80a25-6cb8-40f2-98e4-a913db1fea86",
+      "requested": "com.google.code.findbugs:jsr305",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "80b1208c-8ef6-47e6-9f9c-1d7084c5a21d",
+      "target": "be1e6d87-88dc-470f-ba08-2a4a61971bdf",
+      "requested": "it.unimi.dsi:fastutil",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "296ff3bd-091a-4102-b26e-bd8beeafcd50",
+      "target": "80b1208c-8ef6-47e6-9f9c-1d7084c5a21d",
+      "requested": "project :baseServices",
+      "constraint": false,
+      "depth": 0
+    }
+  ]
+}

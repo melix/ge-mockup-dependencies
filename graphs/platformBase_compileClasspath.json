@@ -1,0 +1,1904 @@
+{
+  "project": "platformBase",
+  "configuration": "compileClasspath",
+  "description": "Compile classpath for source set \u0027main\u0027.",
+  "root": "76600a16-cd9f-47d8-9253-3323b00cd59a",
+  "nodes": [
+    {
+      "id": "76600a16-cd9f-47d8-9253-3323b00cd59a",
+      "name": "project :platformBase",
+      "type": "project",
+      "resolvedVariantDisplayName": "compileClasspath",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "ROOT",
+          "reason": "root"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "9f733c93-0383-49d0-8e90-e6157454e171",
+      "name": "org.gradle.groovy:groovy-all:1.0-2.5.4",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "emulating the Groovy 2.4-style groovy-all.jar, see https://github.com/gradle/gradle-groovy-all"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "e60cf280-5b5d-4f33-8824-189979278723",
+      "name": "project :core",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "name": "project :baseServices",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "ebbd216a-0045-4029-abf2-1ce109616d41",
+      "name": "project :distributionsDependencies",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "platform"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "d427728b-f1fa-4cc8-85c2-631d5b0001b6",
+      "name": "org.apache.ant:ant:1.9.13",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "1.10.x requires Java 8"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "5554517b-383c-430e-a258-85e1e09585e2",
+      "name": "org.apache.ant:ant-launcher:1.9.13",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "4543ab98-93ab-4bd4-8e96-9461b04d0756",
+      "name": "commons-collections:commons-collections:3.2.2",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "44949b1d-c4f0-41cd-9787-a70cc8463064",
+      "name": "commons-lang:commons-lang:2.6",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "f7963e44-2323-4707-b6e9-909af8cb8a8b",
+      "name": "it.unimi.dsi:fastutil:8.2.1",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "037ea42b-dae5-4fbe-97f6-3dce1383b9bd",
+      "name": "com.google.guava:guava:26.0-android",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "android variant is compatible with JDK 7"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "a7bc42c3-a716-42a9-b44e-7877955d3e20",
+      "name": "javax.inject:javax.inject:1",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "4e9e1a9a-4319-4f22-af00-c1b631c0f455",
+      "name": "net.jcip:jcip-annotations:1.0",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "aa461471-e74a-4b98-9468-db7bc9fde60f",
+      "name": "com.google.code.findbugs:jsr305:3.0.2",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "65187b0c-6ef5-4d95-8232-1a4f7fde1329",
+      "name": "net.rubygrapefruit:native-platform:0.14",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "8b3e0b0d-8916-4507-878f-77a901cffd70",
+      "name": "net.rubygrapefruit:native-platform-freebsd-amd64-libcpp:0.14",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "d89363ea-aed5-45fe-b6e6-ac1a7c72d64a",
+      "name": "net.rubygrapefruit:native-platform-freebsd-amd64-libstdcpp:0.14",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "651d6e0e-84f0-410e-b1cd-02180fac61a7",
+      "name": "net.rubygrapefruit:native-platform-freebsd-i386-libcpp:0.14",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "fc340a88-0c6c-416b-85c2-f59a5a392a91",
+      "name": "net.rubygrapefruit:native-platform-freebsd-i386-libstdcpp:0.14",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "5295df3e-6079-426b-8bb1-a355a981046f",
+      "name": "net.rubygrapefruit:native-platform-linux-amd64:0.14",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "c18edfbc-132d-43ea-a12c-1bae73bd2fd9",
+      "name": "net.rubygrapefruit:native-platform-linux-i386:0.14",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "9decab5c-e3a1-410a-b2fa-1f8038d145e8",
+      "name": "net.rubygrapefruit:native-platform-osx-amd64:0.14",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "99e798d4-9d83-49e4-9350-3adcf35ed9a0",
+      "name": "net.rubygrapefruit:native-platform-osx-i386:0.14",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "df60221c-d4b1-48ed-86d6-adb401f0ba96",
+      "name": "net.rubygrapefruit:native-platform-windows-amd64:0.14",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "1b62cc48-9b50-405e-a1b7-2c210f84ade7",
+      "name": "net.rubygrapefruit:native-platform-windows-i386:0.14",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "b5377ff1-88b4-46a1-bb52-236114fe356c",
+      "name": "net.rubygrapefruit:native-platform-linux-amd64-ncurses5:0.14",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "e1ab289b-cf32-4dc1-aa9e-9be2631ae528",
+      "name": "net.rubygrapefruit:native-platform-linux-amd64-ncurses6:0.14",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "06f9767c-ca8d-4223-87ea-304f84f576ce",
+      "name": "net.rubygrapefruit:native-platform-linux-i386-ncurses5:0.14",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "4fa58df7-b7ae-4142-b18f-677d68069190",
+      "name": "net.rubygrapefruit:native-platform-linux-i386-ncurses6:0.14",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "84c11dbf-95d6-47f6-b335-922ec4d8a154",
+      "name": "org.slf4j:slf4j-api:1.7.25",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "1be085e6-17b8-4652-bc85-19d765b8dd3d",
+      "name": "project :baseServicesGroovy",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "d8a757e3-17ef-4e7a-92a3-5c66fb516509",
+      "name": "project :messaging",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "c64aa4e7-a2a0-4f77-820e-08854fce0b44",
+      "name": "project :logging",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "cdffe0d3-aeaa-45a7-952c-56eb2ae95f23",
+      "name": "project :cli",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "1855b734-3be2-43b4-9229-da82301506f1",
+      "name": "project :buildOption",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "fb7b9444-e3e0-49c4-ba29-a9f8810ffa5e",
+      "name": "project :resources",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "e639deec-d787-4684-9ad1-c56201ab1eba",
+      "name": "project :native",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "1edcc826-c3b7-4b7c-a40d-ae76293edfff",
+      "name": "project :persistentCache",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "bd981622-ca3b-4e8e-b22b-7a48a649704d",
+      "name": "project :buildCache",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "06d916e0-4f4e-4bb2-a50e-fc4501f111ad",
+      "name": "project :buildCachePackaging",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "c8098216-e57c-4e5f-a41f-32649c0c8e7f",
+      "name": "project :snapshots",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "cada904e-d4f8-461c-9ed1-68b190e8a047",
+      "name": "project :coreApi",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "99b472ae-d28f-4ac4-884e-0c0f44bd34f4",
+      "name": "project :processServices",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "4dc439a0-1553-42e7-9bb2-aaaf2376be97",
+      "name": "project :files",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "076f7519-08f1-4f9d-b6df-6c1431fcaaa3",
+      "name": "project :modelCore",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "5037efdf-d946-4408-93f7-800318664b2a",
+      "name": "project :jvmServices",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "ba530577-b7ad-4160-80b5-aef64fa85d47",
+      "name": "project :dependencyManagement",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "d15348f1-5788-498c-a9c0-8540c0945e5d",
+      "name": "project :workers",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    }
+  ],
+  "links": [
+    {
+      "source": "76600a16-cd9f-47d8-9253-3323b00cd59a",
+      "target": "9f733c93-0383-49d0-8e90-e6157454e171",
+      "requested": "org.gradle.groovy:groovy-all",
+      "constraint": false,
+      "depth": 0
+    },
+    {
+      "source": "d427728b-f1fa-4cc8-85c2-631d5b0001b6",
+      "target": "5554517b-383c-430e-a258-85e1e09585e2",
+      "requested": "org.apache.ant:ant-launcher:1.9.13",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "ebbd216a-0045-4029-abf2-1ce109616d41",
+      "target": "d427728b-f1fa-4cc8-85c2-631d5b0001b6",
+      "requested": "org.apache.ant:ant:{strictly 1.9.13}",
+      "constraint": true,
+      "depth": 3
+    },
+    {
+      "source": "ebbd216a-0045-4029-abf2-1ce109616d41",
+      "target": "4543ab98-93ab-4bd4-8e96-9461b04d0756",
+      "requested": "commons-collections:commons-collections:{strictly 3.2.2}",
+      "constraint": true,
+      "depth": 3
+    },
+    {
+      "source": "ebbd216a-0045-4029-abf2-1ce109616d41",
+      "target": "44949b1d-c4f0-41cd-9787-a70cc8463064",
+      "requested": "commons-lang:commons-lang:{strictly 2.6}",
+      "constraint": true,
+      "depth": 3
+    },
+    {
+      "source": "ebbd216a-0045-4029-abf2-1ce109616d41",
+      "target": "f7963e44-2323-4707-b6e9-909af8cb8a8b",
+      "requested": "it.unimi.dsi:fastutil:{strictly 8.2.1}",
+      "constraint": true,
+      "depth": 3
+    },
+    {
+      "source": "ebbd216a-0045-4029-abf2-1ce109616d41",
+      "target": "9f733c93-0383-49d0-8e90-e6157454e171",
+      "requested": "org.gradle.groovy:groovy-all:{strictly 1.0-2.5.4}",
+      "constraint": true,
+      "depth": 3
+    },
+    {
+      "source": "ebbd216a-0045-4029-abf2-1ce109616d41",
+      "target": "037ea42b-dae5-4fbe-97f6-3dce1383b9bd",
+      "requested": "com.google.guava:guava:{strictly 26.0-android}",
+      "constraint": true,
+      "depth": 3
+    },
+    {
+      "source": "ebbd216a-0045-4029-abf2-1ce109616d41",
+      "target": "a7bc42c3-a716-42a9-b44e-7877955d3e20",
+      "requested": "javax.inject:javax.inject:{strictly 1}",
+      "constraint": true,
+      "depth": 3
+    },
+    {
+      "source": "ebbd216a-0045-4029-abf2-1ce109616d41",
+      "target": "4e9e1a9a-4319-4f22-af00-c1b631c0f455",
+      "requested": "net.jcip:jcip-annotations:{strictly 1.0}",
+      "constraint": true,
+      "depth": 3
+    },
+    {
+      "source": "ebbd216a-0045-4029-abf2-1ce109616d41",
+      "target": "aa461471-e74a-4b98-9468-db7bc9fde60f",
+      "requested": "com.google.code.findbugs:jsr305:{strictly 3.0.2}",
+      "constraint": true,
+      "depth": 3
+    },
+    {
+      "source": "65187b0c-6ef5-4d95-8232-1a4f7fde1329",
+      "target": "8b3e0b0d-8916-4507-878f-77a901cffd70",
+      "requested": "net.rubygrapefruit:native-platform-freebsd-amd64-libcpp:0.14",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "65187b0c-6ef5-4d95-8232-1a4f7fde1329",
+      "target": "d89363ea-aed5-45fe-b6e6-ac1a7c72d64a",
+      "requested": "net.rubygrapefruit:native-platform-freebsd-amd64-libstdcpp:0.14",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "65187b0c-6ef5-4d95-8232-1a4f7fde1329",
+      "target": "651d6e0e-84f0-410e-b1cd-02180fac61a7",
+      "requested": "net.rubygrapefruit:native-platform-freebsd-i386-libcpp:0.14",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "65187b0c-6ef5-4d95-8232-1a4f7fde1329",
+      "target": "fc340a88-0c6c-416b-85c2-f59a5a392a91",
+      "requested": "net.rubygrapefruit:native-platform-freebsd-i386-libstdcpp:0.14",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "65187b0c-6ef5-4d95-8232-1a4f7fde1329",
+      "target": "5295df3e-6079-426b-8bb1-a355a981046f",
+      "requested": "net.rubygrapefruit:native-platform-linux-amd64:0.14",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "65187b0c-6ef5-4d95-8232-1a4f7fde1329",
+      "target": "c18edfbc-132d-43ea-a12c-1bae73bd2fd9",
+      "requested": "net.rubygrapefruit:native-platform-linux-i386:0.14",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "65187b0c-6ef5-4d95-8232-1a4f7fde1329",
+      "target": "9decab5c-e3a1-410a-b2fa-1f8038d145e8",
+      "requested": "net.rubygrapefruit:native-platform-osx-amd64:0.14",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "65187b0c-6ef5-4d95-8232-1a4f7fde1329",
+      "target": "99e798d4-9d83-49e4-9350-3adcf35ed9a0",
+      "requested": "net.rubygrapefruit:native-platform-osx-i386:0.14",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "65187b0c-6ef5-4d95-8232-1a4f7fde1329",
+      "target": "df60221c-d4b1-48ed-86d6-adb401f0ba96",
+      "requested": "net.rubygrapefruit:native-platform-windows-amd64:0.14",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "65187b0c-6ef5-4d95-8232-1a4f7fde1329",
+      "target": "1b62cc48-9b50-405e-a1b7-2c210f84ade7",
+      "requested": "net.rubygrapefruit:native-platform-windows-i386:0.14",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "65187b0c-6ef5-4d95-8232-1a4f7fde1329",
+      "target": "b5377ff1-88b4-46a1-bb52-236114fe356c",
+      "requested": "net.rubygrapefruit:native-platform-linux-amd64-ncurses5:0.14",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "65187b0c-6ef5-4d95-8232-1a4f7fde1329",
+      "target": "e1ab289b-cf32-4dc1-aa9e-9be2631ae528",
+      "requested": "net.rubygrapefruit:native-platform-linux-amd64-ncurses6:0.14",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "65187b0c-6ef5-4d95-8232-1a4f7fde1329",
+      "target": "06f9767c-ca8d-4223-87ea-304f84f576ce",
+      "requested": "net.rubygrapefruit:native-platform-linux-i386-ncurses5:0.14",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "65187b0c-6ef5-4d95-8232-1a4f7fde1329",
+      "target": "4fa58df7-b7ae-4142-b18f-677d68069190",
+      "requested": "net.rubygrapefruit:native-platform-linux-i386-ncurses6:0.14",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "ebbd216a-0045-4029-abf2-1ce109616d41",
+      "target": "65187b0c-6ef5-4d95-8232-1a4f7fde1329",
+      "requested": "net.rubygrapefruit:native-platform:{strictly 0.14}",
+      "constraint": true,
+      "depth": 3
+    },
+    {
+      "source": "ebbd216a-0045-4029-abf2-1ce109616d41",
+      "target": "84c11dbf-95d6-47f6-b335-922ec4d8a154",
+      "requested": "org.slf4j:slf4j-api:{strictly 1.7.25}",
+      "constraint": true,
+      "depth": 3
+    },
+    {
+      "source": "ebbd216a-0045-4029-abf2-1ce109616d41",
+      "target": "5554517b-383c-430e-a258-85e1e09585e2",
+      "requested": "org.apache.ant:ant-launcher:{strictly 1.9.13}",
+      "constraint": true,
+      "depth": 3
+    },
+    {
+      "source": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "target": "ebbd216a-0045-4029-abf2-1ce109616d41",
+      "requested": "project :distributionsDependencies",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "target": "037ea42b-dae5-4fbe-97f6-3dce1383b9bd",
+      "requested": "com.google.guava:guava",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "target": "aa461471-e74a-4b98-9468-db7bc9fde60f",
+      "requested": "com.google.code.findbugs:jsr305",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "target": "f7963e44-2323-4707-b6e9-909af8cb8a8b",
+      "requested": "it.unimi.dsi:fastutil",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "requested": "project :baseServices",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "1be085e6-17b8-4652-bc85-19d765b8dd3d",
+      "target": "9f733c93-0383-49d0-8e90-e6157454e171",
+      "requested": "org.gradle.groovy:groovy-all",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "1be085e6-17b8-4652-bc85-19d765b8dd3d",
+      "target": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "requested": "project :baseServices",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "1be085e6-17b8-4652-bc85-19d765b8dd3d",
+      "requested": "project :baseServicesGroovy",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "d8a757e3-17ef-4e7a-92a3-5c66fb516509",
+      "target": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "requested": "project :baseServices",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "d8a757e3-17ef-4e7a-92a3-5c66fb516509",
+      "target": "84c11dbf-95d6-47f6-b335-922ec4d8a154",
+      "requested": "org.slf4j:slf4j-api",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "d8a757e3-17ef-4e7a-92a3-5c66fb516509",
+      "requested": "project :messaging",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "c64aa4e7-a2a0-4f77-820e-08854fce0b44",
+      "target": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "requested": "project :baseServices",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "c64aa4e7-a2a0-4f77-820e-08854fce0b44",
+      "target": "d8a757e3-17ef-4e7a-92a3-5c66fb516509",
+      "requested": "project :messaging",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "cdffe0d3-aeaa-45a7-952c-56eb2ae95f23",
+      "target": "ebbd216a-0045-4029-abf2-1ce109616d41",
+      "requested": "project :distributionsDependencies",
+      "constraint": false,
+      "depth": 3
+    },
+    {
+      "source": "c64aa4e7-a2a0-4f77-820e-08854fce0b44",
+      "target": "cdffe0d3-aeaa-45a7-952c-56eb2ae95f23",
+      "requested": "project :cli",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "1855b734-3be2-43b4-9229-da82301506f1",
+      "target": "cdffe0d3-aeaa-45a7-952c-56eb2ae95f23",
+      "requested": "project :cli",
+      "constraint": false,
+      "depth": 3
+    },
+    {
+      "source": "1855b734-3be2-43b4-9229-da82301506f1",
+      "target": "aa461471-e74a-4b98-9468-db7bc9fde60f",
+      "requested": "com.google.code.findbugs:jsr305",
+      "constraint": false,
+      "depth": 3
+    },
+    {
+      "source": "c64aa4e7-a2a0-4f77-820e-08854fce0b44",
+      "target": "1855b734-3be2-43b4-9229-da82301506f1",
+      "requested": "project :buildOption",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "c64aa4e7-a2a0-4f77-820e-08854fce0b44",
+      "target": "84c11dbf-95d6-47f6-b335-922ec4d8a154",
+      "requested": "org.slf4j:slf4j-api",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "c64aa4e7-a2a0-4f77-820e-08854fce0b44",
+      "requested": "project :logging",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "fb7b9444-e3e0-49c4-ba29-a9f8810ffa5e",
+      "target": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "requested": "project :baseServices",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "fb7b9444-e3e0-49c4-ba29-a9f8810ffa5e",
+      "target": "d8a757e3-17ef-4e7a-92a3-5c66fb516509",
+      "requested": "project :messaging",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "e639deec-d787-4684-9ad1-c56201ab1eba",
+      "target": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "requested": "project :baseServices",
+      "constraint": false,
+      "depth": 3
+    },
+    {
+      "source": "e639deec-d787-4684-9ad1-c56201ab1eba",
+      "target": "65187b0c-6ef5-4d95-8232-1a4f7fde1329",
+      "requested": "net.rubygrapefruit:native-platform",
+      "constraint": false,
+      "depth": 3
+    },
+    {
+      "source": "fb7b9444-e3e0-49c4-ba29-a9f8810ffa5e",
+      "target": "e639deec-d787-4684-9ad1-c56201ab1eba",
+      "requested": "project :native",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "fb7b9444-e3e0-49c4-ba29-a9f8810ffa5e",
+      "requested": "project :resources",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "cdffe0d3-aeaa-45a7-952c-56eb2ae95f23",
+      "requested": "project :cli",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "1855b734-3be2-43b4-9229-da82301506f1",
+      "requested": "project :buildOption",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "e639deec-d787-4684-9ad1-c56201ab1eba",
+      "requested": "project :native",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "1edcc826-c3b7-4b7c-a40d-ae76293edfff",
+      "target": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "requested": "project :baseServices",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "1edcc826-c3b7-4b7c-a40d-ae76293edfff",
+      "target": "d8a757e3-17ef-4e7a-92a3-5c66fb516509",
+      "requested": "project :messaging",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "1edcc826-c3b7-4b7c-a40d-ae76293edfff",
+      "target": "e639deec-d787-4684-9ad1-c56201ab1eba",
+      "requested": "project :native",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "1edcc826-c3b7-4b7c-a40d-ae76293edfff",
+      "target": "fb7b9444-e3e0-49c4-ba29-a9f8810ffa5e",
+      "requested": "project :resources",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "1edcc826-c3b7-4b7c-a40d-ae76293edfff",
+      "target": "c64aa4e7-a2a0-4f77-820e-08854fce0b44",
+      "requested": "project :logging",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "1edcc826-c3b7-4b7c-a40d-ae76293edfff",
+      "target": "4e9e1a9a-4319-4f22-af00-c1b631c0f455",
+      "requested": "net.jcip:jcip-annotations",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "1edcc826-c3b7-4b7c-a40d-ae76293edfff",
+      "requested": "project :persistentCache",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "bd981622-ca3b-4e8e-b22b-7a48a649704d",
+      "target": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "requested": "project :baseServices",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "bd981622-ca3b-4e8e-b22b-7a48a649704d",
+      "target": "a7bc42c3-a716-42a9-b44e-7877955d3e20",
+      "requested": "javax.inject:javax.inject",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "bd981622-ca3b-4e8e-b22b-7a48a649704d",
+      "requested": "project :buildCache",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "06d916e0-4f4e-4bb2-a50e-fc4501f111ad",
+      "target": "bd981622-ca3b-4e8e-b22b-7a48a649704d",
+      "requested": "project :buildCache",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "c8098216-e57c-4e5f-a41f-32649c0c8e7f",
+      "target": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "requested": "project :baseServices",
+      "constraint": false,
+      "depth": 3
+    },
+    {
+      "source": "cada904e-d4f8-461c-9ed1-68b190e8a047",
+      "target": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "requested": "project :baseServices",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "cada904e-d4f8-461c-9ed1-68b190e8a047",
+      "target": "1be085e6-17b8-4652-bc85-19d765b8dd3d",
+      "requested": "project :baseServicesGroovy",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "cada904e-d4f8-461c-9ed1-68b190e8a047",
+      "target": "bd981622-ca3b-4e8e-b22b-7a48a649704d",
+      "requested": "project :buildCache",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "cada904e-d4f8-461c-9ed1-68b190e8a047",
+      "target": "c64aa4e7-a2a0-4f77-820e-08854fce0b44",
+      "requested": "project :logging",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "cada904e-d4f8-461c-9ed1-68b190e8a047",
+      "target": "1edcc826-c3b7-4b7c-a40d-ae76293edfff",
+      "requested": "project :persistentCache",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "99b472ae-d28f-4ac4-884e-0c0f44bd34f4",
+      "target": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "requested": "project :baseServices",
+      "constraint": false,
+      "depth": 5
+    },
+    {
+      "source": "cada904e-d4f8-461c-9ed1-68b190e8a047",
+      "target": "99b472ae-d28f-4ac4-884e-0c0f44bd34f4",
+      "requested": "project :processServices",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "cada904e-d4f8-461c-9ed1-68b190e8a047",
+      "target": "fb7b9444-e3e0-49c4-ba29-a9f8810ffa5e",
+      "requested": "project :resources",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "c8098216-e57c-4e5f-a41f-32649c0c8e7f",
+      "target": "cada904e-d4f8-461c-9ed1-68b190e8a047",
+      "requested": "project :coreApi",
+      "constraint": false,
+      "depth": 3
+    },
+    {
+      "source": "4dc439a0-1553-42e7-9bb2-aaaf2376be97",
+      "target": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "requested": "project :baseServices",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "4dc439a0-1553-42e7-9bb2-aaaf2376be97",
+      "target": "1be085e6-17b8-4652-bc85-19d765b8dd3d",
+      "requested": "project :baseServicesGroovy",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "4dc439a0-1553-42e7-9bb2-aaaf2376be97",
+      "target": "cada904e-d4f8-461c-9ed1-68b190e8a047",
+      "requested": "project :coreApi",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "076f7519-08f1-4f9d-b6df-6c1431fcaaa3",
+      "target": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "requested": "project :baseServices",
+      "constraint": false,
+      "depth": 5
+    },
+    {
+      "source": "076f7519-08f1-4f9d-b6df-6c1431fcaaa3",
+      "target": "cada904e-d4f8-461c-9ed1-68b190e8a047",
+      "requested": "project :coreApi",
+      "constraint": false,
+      "depth": 5
+    },
+    {
+      "source": "076f7519-08f1-4f9d-b6df-6c1431fcaaa3",
+      "target": "9f733c93-0383-49d0-8e90-e6157454e171",
+      "requested": "org.gradle.groovy:groovy-all",
+      "constraint": false,
+      "depth": 5
+    },
+    {
+      "source": "4dc439a0-1553-42e7-9bb2-aaaf2376be97",
+      "target": "076f7519-08f1-4f9d-b6df-6c1431fcaaa3",
+      "requested": "project :modelCore",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "4dc439a0-1553-42e7-9bb2-aaaf2376be97",
+      "target": "037ea42b-dae5-4fbe-97f6-3dce1383b9bd",
+      "requested": "com.google.guava:guava",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "4dc439a0-1553-42e7-9bb2-aaaf2376be97",
+      "target": "aa461471-e74a-4b98-9468-db7bc9fde60f",
+      "requested": "com.google.code.findbugs:jsr305",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "4dc439a0-1553-42e7-9bb2-aaaf2376be97",
+      "target": "a7bc42c3-a716-42a9-b44e-7877955d3e20",
+      "requested": "javax.inject:javax.inject",
+      "constraint": false,
+      "depth": 4
+    },
+    {
+      "source": "c8098216-e57c-4e5f-a41f-32649c0c8e7f",
+      "target": "4dc439a0-1553-42e7-9bb2-aaaf2376be97",
+      "requested": "project :files",
+      "constraint": false,
+      "depth": 3
+    },
+    {
+      "source": "c8098216-e57c-4e5f-a41f-32649c0c8e7f",
+      "target": "037ea42b-dae5-4fbe-97f6-3dce1383b9bd",
+      "requested": "com.google.guava:guava",
+      "constraint": false,
+      "depth": 3
+    },
+    {
+      "source": "c8098216-e57c-4e5f-a41f-32649c0c8e7f",
+      "target": "aa461471-e74a-4b98-9468-db7bc9fde60f",
+      "requested": "com.google.code.findbugs:jsr305",
+      "constraint": false,
+      "depth": 3
+    },
+    {
+      "source": "c8098216-e57c-4e5f-a41f-32649c0c8e7f",
+      "target": "a7bc42c3-a716-42a9-b44e-7877955d3e20",
+      "requested": "javax.inject:javax.inject",
+      "constraint": false,
+      "depth": 3
+    },
+    {
+      "source": "06d916e0-4f4e-4bb2-a50e-fc4501f111ad",
+      "target": "c8098216-e57c-4e5f-a41f-32649c0c8e7f",
+      "requested": "project :snapshots",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "06d916e0-4f4e-4bb2-a50e-fc4501f111ad",
+      "target": "037ea42b-dae5-4fbe-97f6-3dce1383b9bd",
+      "requested": "com.google.guava:guava",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "06d916e0-4f4e-4bb2-a50e-fc4501f111ad",
+      "target": "aa461471-e74a-4b98-9468-db7bc9fde60f",
+      "requested": "com.google.code.findbugs:jsr305",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "06d916e0-4f4e-4bb2-a50e-fc4501f111ad",
+      "target": "a7bc42c3-a716-42a9-b44e-7877955d3e20",
+      "requested": "javax.inject:javax.inject",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "06d916e0-4f4e-4bb2-a50e-fc4501f111ad",
+      "requested": "project :buildCachePackaging",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "cada904e-d4f8-461c-9ed1-68b190e8a047",
+      "requested": "project :coreApi",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "4dc439a0-1553-42e7-9bb2-aaaf2376be97",
+      "requested": "project :files",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "99b472ae-d28f-4ac4-884e-0c0f44bd34f4",
+      "requested": "project :processServices",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "5037efdf-d946-4408-93f7-800318664b2a",
+      "target": "b97e4a2c-076d-4c67-bc02-747a170b62e6",
+      "requested": "project :baseServices",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "5037efdf-d946-4408-93f7-800318664b2a",
+      "target": "99b472ae-d28f-4ac4-884e-0c0f44bd34f4",
+      "requested": "project :processServices",
+      "constraint": false,
+      "depth": 2
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "5037efdf-d946-4408-93f7-800318664b2a",
+      "requested": "project :jvmServices",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "076f7519-08f1-4f9d-b6df-6c1431fcaaa3",
+      "requested": "project :modelCore",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "9f733c93-0383-49d0-8e90-e6157454e171",
+      "requested": "org.gradle.groovy:groovy-all",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "d427728b-f1fa-4cc8-85c2-631d5b0001b6",
+      "requested": "org.apache.ant:ant",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "037ea42b-dae5-4fbe-97f6-3dce1383b9bd",
+      "requested": "com.google.guava:guava",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "e60cf280-5b5d-4f33-8824-189979278723",
+      "target": "a7bc42c3-a716-42a9-b44e-7877955d3e20",
+      "requested": "javax.inject:javax.inject",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "76600a16-cd9f-47d8-9253-3323b00cd59a",
+      "target": "e60cf280-5b5d-4f33-8824-189979278723",
+      "requested": "project :core",
+      "constraint": false,
+      "depth": 0
+    },
+    {
+      "source": "ba530577-b7ad-4160-80b5-aef64fa85d47",
+      "target": "e60cf280-5b5d-4f33-8824-189979278723",
+      "requested": "project :core",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "76600a16-cd9f-47d8-9253-3323b00cd59a",
+      "target": "ba530577-b7ad-4160-80b5-aef64fa85d47",
+      "requested": "project :dependencyManagement",
+      "constraint": false,
+      "depth": 0
+    },
+    {
+      "source": "d15348f1-5788-498c-a9c0-8540c0945e5d",
+      "target": "e60cf280-5b5d-4f33-8824-189979278723",
+      "requested": "project :core",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "d15348f1-5788-498c-a9c0-8540c0945e5d",
+      "target": "4e9e1a9a-4319-4f22-af00-c1b631c0f455",
+      "requested": "net.jcip:jcip-annotations",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "76600a16-cd9f-47d8-9253-3323b00cd59a",
+      "target": "d15348f1-5788-498c-a9c0-8540c0945e5d",
+      "requested": "project :workers",
+      "constraint": false,
+      "depth": 0
+    },
+    {
+      "source": "76600a16-cd9f-47d8-9253-3323b00cd59a",
+      "target": "4543ab98-93ab-4bd4-8e96-9461b04d0756",
+      "requested": "commons-collections:commons-collections",
+      "constraint": false,
+      "depth": 0
+    },
+    {
+      "source": "76600a16-cd9f-47d8-9253-3323b00cd59a",
+      "target": "44949b1d-c4f0-41cd-9787-a70cc8463064",
+      "requested": "commons-lang:commons-lang",
+      "constraint": false,
+      "depth": 0
+    }
+  ]
+}

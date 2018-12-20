@@ -1,0 +1,167 @@
+{
+  "project": "buildOption",
+  "configuration": "runtimeClasspath",
+  "description": "Runtime classpath of source set \u0027main\u0027.",
+  "root": "32ebe896-b1d1-4557-af1c-0ea33c571b99",
+  "nodes": [
+    {
+      "id": "32ebe896-b1d1-4557-af1c-0ea33c571b99",
+      "name": "project :buildOption",
+      "type": "project",
+      "resolvedVariantDisplayName": "runtimeClasspath",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-runtime",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "ROOT",
+          "reason": "root"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "e65a1e72-7b3b-494a-8f82-2b4f3b15e287",
+      "name": "project :cli",
+      "type": "project",
+      "resolvedVariantDisplayName": "runtimeElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-runtime-jars",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "0c4d0f39-490c-4a32-884d-e9e4a4f744af",
+      "name": "project :distributionsDependencies",
+      "type": "project",
+      "resolvedVariantDisplayName": "runtimeElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-runtime",
+        "org.gradle.component.category": "platform"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "aee09c35-abe1-4022-a764-77eb185d06fd",
+      "name": "commons-lang:commons-lang:2.6",
+      "type": "module",
+      "resolvedVariantDisplayName": "runtime",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-runtime",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "3709a2b5-6ec9-4e0e-809a-77c6a19ef7df",
+      "name": "com.google.code.findbugs:jsr305:3.0.2",
+      "type": "module",
+      "resolvedVariantDisplayName": "runtime",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-runtime",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    }
+  ],
+  "links": [
+    {
+      "source": "0c4d0f39-490c-4a32-884d-e9e4a4f744af",
+      "target": "aee09c35-abe1-4022-a764-77eb185d06fd",
+      "requested": "commons-lang:commons-lang:{strictly 2.6}",
+      "constraint": true,
+      "depth": 2
+    },
+    {
+      "source": "0c4d0f39-490c-4a32-884d-e9e4a4f744af",
+      "target": "3709a2b5-6ec9-4e0e-809a-77c6a19ef7df",
+      "requested": "com.google.code.findbugs:jsr305:{strictly 3.0.2}",
+      "constraint": true,
+      "depth": 2
+    },
+    {
+      "source": "e65a1e72-7b3b-494a-8f82-2b4f3b15e287",
+      "target": "0c4d0f39-490c-4a32-884d-e9e4a4f744af",
+      "requested": "project :distributionsDependencies",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "32ebe896-b1d1-4557-af1c-0ea33c571b99",
+      "target": "e65a1e72-7b3b-494a-8f82-2b4f3b15e287",
+      "requested": "project :cli",
+      "constraint": false,
+      "depth": 0
+    },
+    {
+      "source": "32ebe896-b1d1-4557-af1c-0ea33c571b99",
+      "target": "3709a2b5-6ec9-4e0e-809a-77c6a19ef7df",
+      "requested": "com.google.code.findbugs:jsr305",
+      "constraint": false,
+      "depth": 0
+    },
+    {
+      "source": "32ebe896-b1d1-4557-af1c-0ea33c571b99",
+      "target": "aee09c35-abe1-4022-a764-77eb185d06fd",
+      "requested": "commons-lang:commons-lang",
+      "constraint": false,
+      "depth": 0
+    }
+  ]
+}

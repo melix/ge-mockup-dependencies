@@ -1,0 +1,87 @@
+{
+  "project": "wrapper",
+  "configuration": "compileClasspath",
+  "description": "Compile classpath for source set \u0027main\u0027.",
+  "root": "8500ef20-7a72-48d1-bf24-ab52ac7882a6",
+  "nodes": [
+    {
+      "id": "8500ef20-7a72-48d1-bf24-ab52ac7882a6",
+      "name": "project :wrapper",
+      "type": "project",
+      "resolvedVariantDisplayName": "compileClasspath",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "ROOT",
+          "reason": "root"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "20b953e1-7f7b-44dd-b7e7-eea5649d1712",
+      "name": "project :cli",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "08687517-1661-4485-a33a-2df1e34e5a3b",
+      "name": "project :distributionsDependencies",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "platform"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    }
+  ],
+  "links": [
+    {
+      "source": "20b953e1-7f7b-44dd-b7e7-eea5649d1712",
+      "target": "08687517-1661-4485-a33a-2df1e34e5a3b",
+      "requested": "project :distributionsDependencies",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "8500ef20-7a72-48d1-bf24-ab52ac7882a6",
+      "target": "20b953e1-7f7b-44dd-b7e7-eea5649d1712",
+      "requested": "project :cli",
+      "constraint": false,
+      "depth": 0
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "project": "buildOption",
+  "configuration": "compileClasspath",
+  "description": "Compile classpath for source set \u0027main\u0027.",
+  "root": "0eed668a-cdfc-4e2f-81e9-dcaf7795aa30",
+  "nodes": [
+    {
+      "id": "0eed668a-cdfc-4e2f-81e9-dcaf7795aa30",
+      "name": "project :buildOption",
+      "type": "project",
+      "resolvedVariantDisplayName": "compileClasspath",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "ROOT",
+          "reason": "root"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "6b13d052-00f2-43cb-b017-e45da7b55822",
+      "name": "project :cli",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "minified": "true"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "1bf953c1-2106-4445-9a46-be87b35d8e54",
+      "name": "project :distributionsDependencies",
+      "type": "project",
+      "resolvedVariantDisplayName": "apiElements",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "platform"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "804c73ef-0721-497f-8cc6-7129b6071a24",
+      "name": "commons-lang:commons-lang:2.6",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "8390b0e1-deef-42bc-bb25-c0a153160a57",
+      "name": "com.google.code.findbugs:jsr305:3.0.2",
+      "type": "module",
+      "resolvedVariantDisplayName": "compile",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-api",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        },
+        {
+          "cause": "CONSTRAINT",
+          "reason": "constraint"
+        }
+      ],
+      "constraint": true,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    }
+  ],
+  "links": [
+    {
+      "source": "1bf953c1-2106-4445-9a46-be87b35d8e54",
+      "target": "804c73ef-0721-497f-8cc6-7129b6071a24",
+      "requested": "commons-lang:commons-lang:{strictly 2.6}",
+      "constraint": true,
+      "depth": 2
+    },
+    {
+      "source": "1bf953c1-2106-4445-9a46-be87b35d8e54",
+      "target": "8390b0e1-deef-42bc-bb25-c0a153160a57",
+      "requested": "com.google.code.findbugs:jsr305:{strictly 3.0.2}",
+      "constraint": true,
+      "depth": 2
+    },
+    {
+      "source": "6b13d052-00f2-43cb-b017-e45da7b55822",
+      "target": "1bf953c1-2106-4445-9a46-be87b35d8e54",
+      "requested": "project :distributionsDependencies",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "0eed668a-cdfc-4e2f-81e9-dcaf7795aa30",
+      "target": "6b13d052-00f2-43cb-b017-e45da7b55822",
+      "requested": "project :cli",
+      "constraint": false,
+      "depth": 0
+    },
+    {
+      "source": "0eed668a-cdfc-4e2f-81e9-dcaf7795aa30",
+      "target": "8390b0e1-deef-42bc-bb25-c0a153160a57",
+      "requested": "com.google.code.findbugs:jsr305",
+      "constraint": false,
+      "depth": 0
+    },
+    {
+      "source": "0eed668a-cdfc-4e2f-81e9-dcaf7795aa30",
+      "target": "804c73ef-0721-497f-8cc6-7129b6071a24",
+      "requested": "commons-lang:commons-lang",
+      "constraint": false,
+      "depth": 0
+    }
+  ]
+}

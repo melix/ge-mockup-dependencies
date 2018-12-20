@@ -1,0 +1,153 @@
+{
+  "project": "api-trace-agent",
+  "configuration": "runtimeClasspath",
+  "description": "Runtime classpath of source set \u0027main\u0027.",
+  "root": "45adc9ea-572d-445b-92d9-e8ccba0528ae",
+  "nodes": [
+    {
+      "id": "45adc9ea-572d-445b-92d9-e8ccba0528ae",
+      "name": "project :api-trace-agent",
+      "type": "project",
+      "resolvedVariantDisplayName": "runtimeClasspath",
+      "resolvedVariantAttributes": {
+        "org.gradle.usage": "java-runtime"
+      },
+      "selectionReasons": [
+        {
+          "cause": "ROOT",
+          "reason": "root"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "020de98f-a91b-4f4f-b178-1d281d9a10d5",
+      "name": "org.javassist:javassist:3.20.0-GA",
+      "type": "module",
+      "resolvedVariantDisplayName": "runtime",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-runtime",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "79d2cf77-d52d-4d68-ba27-5f964b9d3dda",
+      "name": "com.fasterxml.jackson.core:jackson-core:2.8.2",
+      "type": "module",
+      "resolvedVariantDisplayName": "runtime",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-runtime",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "c1f2795e-c3ed-4d10-81c7-ba2f9f189a61",
+      "name": "com.fasterxml.jackson.core:jackson-databind:2.8.2",
+      "type": "module",
+      "resolvedVariantDisplayName": "runtime",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-runtime",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    },
+    {
+      "id": "718cf028-116a-4e72-81c8-2d0715c6e563",
+      "name": "com.fasterxml.jackson.core:jackson-annotations:2.8.0",
+      "type": "module",
+      "resolvedVariantDisplayName": "runtime",
+      "resolvedVariantAttributes": {
+        "org.gradle.status": "release",
+        "org.gradle.usage": "java-runtime",
+        "org.gradle.component.category": "library"
+      },
+      "selectionReasons": [
+        {
+          "cause": "REQUESTED",
+          "reason": "requested"
+        }
+      ],
+      "constraint": false,
+      "forced": false,
+      "conflict": false,
+      "rule": false,
+      "composite": false
+    }
+  ],
+  "links": [
+    {
+      "source": "45adc9ea-572d-445b-92d9-e8ccba0528ae",
+      "target": "020de98f-a91b-4f4f-b178-1d281d9a10d5",
+      "requested": "org.javassist:javassist:latest.release",
+      "constraint": false,
+      "depth": 0
+    },
+    {
+      "source": "45adc9ea-572d-445b-92d9-e8ccba0528ae",
+      "target": "79d2cf77-d52d-4d68-ba27-5f964b9d3dda",
+      "requested": "com.fasterxml.jackson.core:jackson-core:latest.release",
+      "constraint": false,
+      "depth": 0
+    },
+    {
+      "source": "c1f2795e-c3ed-4d10-81c7-ba2f9f189a61",
+      "target": "718cf028-116a-4e72-81c8-2d0715c6e563",
+      "requested": "com.fasterxml.jackson.core:jackson-annotations:2.8.0",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "c1f2795e-c3ed-4d10-81c7-ba2f9f189a61",
+      "target": "79d2cf77-d52d-4d68-ba27-5f964b9d3dda",
+      "requested": "com.fasterxml.jackson.core:jackson-core:2.8.2",
+      "constraint": false,
+      "depth": 1
+    },
+    {
+      "source": "45adc9ea-572d-445b-92d9-e8ccba0528ae",
+      "target": "c1f2795e-c3ed-4d10-81c7-ba2f9f189a61",
+      "requested": "com.fasterxml.jackson.core:jackson-databind:latest.release",
+      "constraint": false,
+      "depth": 0
+    }
+  ]
+}
